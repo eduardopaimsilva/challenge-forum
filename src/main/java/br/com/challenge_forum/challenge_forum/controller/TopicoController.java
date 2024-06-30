@@ -50,8 +50,13 @@ public class TopicoController {
     @Transactional
     public ResponseEntity excluir(@PathVariable Long id){
         repository.deleteById(id);
-
         return ResponseEntity.noContent().build();
+
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity detalhar(@PathVariable Long id){
+        var topico = repository.getReferenceById(id);
+        return ResponseEntity.ok(new DadosDetalhamentoTopico(topico));
 
     }
 
