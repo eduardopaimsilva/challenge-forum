@@ -1,6 +1,6 @@
-package br.com.challenge_forum.challenge_forum.topico;
+package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
 
-import br.com.challenge_forum.challenge_forum.curso.Curso;
+import br.com.challenge_forum.challenge_forum.controller.curso.Curso;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

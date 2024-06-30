@@ -1,6 +1,7 @@
 package br.com.challenge_forum.challenge_forum.controller;
 
-import br.com.challenge_forum.challenge_forum.topico.*;
+
+import br.com.challenge_forum.challenge_forum.controller.curso.domain.topico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +29,6 @@ public class TopicoController {
         var uri = uriBuilder.path("/topico/{id}").buildAndExpand(topico.getId()).toUri();
 
         return ResponseEntity.created(uri).body(new DadosDetalhamentoTopico(topico));
-
-
 
     }
     @GetMapping

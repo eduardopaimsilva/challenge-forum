@@ -1,9 +1,6 @@
-package br.com.challenge_forum.challenge_forum.topico;
+package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
 
-import br.com.challenge_forum.challenge_forum.curso.Curso;
 import jakarta.validation.constraints.NotNull;
-
-import java.time.LocalDateTime;
 
 public record DadosAtualizacaoTopico(
         @NotNull

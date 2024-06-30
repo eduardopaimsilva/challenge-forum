@@ -1,10 +1,9 @@
-package br.com.challenge_forum.challenge_forum.topico;
+package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
 
-import br.com.challenge_forum.challenge_forum.curso.DadosCurso;
+import br.com.challenge_forum.challenge_forum.controller.curso.DadosCurso;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import org.hibernate.annotations.NotFound;
 
 import java.time.LocalDateTime;
 

@@ -1,4 +1,4 @@
-package br.com.challenge_forum.challenge_forum.curso;
+package br.com.challenge_forum.challenge_forum.controller.curso;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EnumType;

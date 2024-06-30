@@ -1,9 +1,6 @@
-package br.com.challenge_forum.challenge_forum.topico;
+package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
 
-import br.com.challenge_forum.challenge_forum.curso.Curso;
-import jakarta.transaction.Transactional;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import br.com.challenge_forum.challenge_forum.controller.curso.Curso;
 
 import java.time.LocalDateTime;
 
