@@ -1,18 +1,13 @@
 package br.com.challenge_forum.challenge_forum.controller;
 
-
-import br.com.challenge_forum.challenge_forum.curso.Curso;
-import br.com.challenge_forum.challenge_forum.topico.DadosCadastroTopico;
-import br.com.challenge_forum.challenge_forum.topico.DadosListagemTopico;
-import br.com.challenge_forum.challenge_forum.topico.Topico;
-import br.com.challenge_forum.challenge_forum.topico.TopicoRepository;
+import br.com.challenge_forum.challenge_forum.topico.*;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("topicos")
@@ -23,13 +18,20 @@ public class TopicoController {
 
     @PostMapping
     @Transactional
-    public void cadastrar(@RequestBody DadosCadastroTopico dados ){
+    public void cadastrar(@RequestBody @Valid DadosCadastroTopico dados ){
         repository.save(new Topico(dados));
 
     }
     @GetMapping
     public Page<DadosListagemTopico> listar(Pageable paginacao){
         return repository.findAll(paginacao).map(DadosListagemTopico::new);
+
+    }
+    @PutMapping
+    @Transactional
+    public void atualizar(@RequestBody @Valid DadosAtualizacaoTopico dados){
+        var topico  = repository.getReferenceById(dados.id());
+        topico.atualizarInformacoes(dados);
 
     }
 }

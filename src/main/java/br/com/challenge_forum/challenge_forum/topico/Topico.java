@@ -33,4 +33,14 @@ public class Topico {
         this.data = dados.data();
         this.curso = new Curso(dados.curso());
     }
+
+    public void atualizarInformacoes(DadosAtualizacaoTopico dados) {
+
+        if(dados.titulo() != null){
+            this.titulo = dados.titulo();
+        }
+        if(dados.mensagem() != null){
+            this.mensagem = dados.mensagem();
+        }
+    }
 }
