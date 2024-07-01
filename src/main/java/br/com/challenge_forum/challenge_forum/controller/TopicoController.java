@@ -1,7 +1,8 @@
 package br.com.challenge_forum.challenge_forum.controller;
 
 
-import br.com.challenge_forum.challenge_forum.controller.curso.domain.topico.*;
+
+import br.com.challenge_forum.challenge_forum.domain.topico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

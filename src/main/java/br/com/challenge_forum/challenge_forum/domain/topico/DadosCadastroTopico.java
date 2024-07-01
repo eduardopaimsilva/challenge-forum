@@ -1,6 +1,6 @@
-package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
+package br.com.challenge_forum.challenge_forum.domain.topico;
 
-import br.com.challenge_forum.challenge_forum.controller.curso.DadosCurso;
+import br.com.challenge_forum.challenge_forum.domain.curso.DadosCurso;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

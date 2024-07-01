@@ -1,6 +1,6 @@
-package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
+package br.com.challenge_forum.challenge_forum.domain.topico;
 
-import br.com.challenge_forum.challenge_forum.controller.curso.Curso;
+import br.com.challenge_forum.challenge_forum.domain.curso.Curso;
 
 import java.time.LocalDateTime;
 

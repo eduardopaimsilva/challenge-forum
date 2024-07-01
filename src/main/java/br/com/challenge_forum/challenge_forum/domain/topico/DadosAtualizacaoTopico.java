@@ -1,4 +1,4 @@
-package br.com.challenge_forum.challenge_forum.controller.curso.domain.topico;
+package br.com.challenge_forum.challenge_forum.domain.topico;
 
 import jakarta.validation.constraints.NotNull;
 

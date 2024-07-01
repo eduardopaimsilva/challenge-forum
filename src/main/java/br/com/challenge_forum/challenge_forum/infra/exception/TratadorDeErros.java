@@ -1,4 +1,4 @@
-package br.com.challenge_forum.challenge_forum.infra;
+package br.com.challenge_forum.challenge_forum.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;

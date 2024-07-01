@@ -1,4 +1,4 @@
-package br.com.challenge_forum.challenge_forum.controller.curso;
+package br.com.challenge_forum.challenge_forum.domain.curso;
 
 public enum Categoria {
     JAVA,
